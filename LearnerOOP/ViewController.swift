@@ -22,12 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var learnerMesinLabel: UILabel!
     var activityInstance: ActivityModel?
     
-    var facilitatorInstance: FacilitatorModel
+    var facilitatorInstance: FacilitatorModel?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FacilitatorModel = FacilitatorModel (facilNameLearner: "Wimba", facilAgeLearner: 20, facilGenderLearner: "Male", facilImageProfileLearner: <#T##String#>, facilPerkLearner: <#T##String#>)
+        
+        facilitatorInstance = FacilitatorModel (facilNameLearner: "Wimba", facilAgeLearner: 20, facilGenderLearner: "Male", facilImageProfileLearner: "", facilPerkLearner:"hidup")
         
 //        learnerInstance = LearnerModel (nameLearner: "Wimba", ageLearner: 20, genderLearner: "Male", imageProfileLearner: "")
 //        updateUI()
@@ -50,9 +51,9 @@ class ViewController: UIViewController {
     }
    
     @IBAction func increaseAgeButtonClicked(_ sender: UIButton) {
-        if let instance = facilitatorInstance
+        if let instance = facilitatorInstance {
         instance.increaseAge()
-        instance.coachMentee()
+            instance.coachMentea()
         updateUI()
     }
 //        if let instance = learnerInstance {
