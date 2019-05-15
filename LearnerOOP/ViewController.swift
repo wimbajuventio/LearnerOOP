@@ -15,35 +15,51 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var learnerGenderLabel: UILabel!
     
-    var learnerInstance: LearnerModel?
+    
+    @IBOutlet weak var learnerBrandLabel: UILabel!
+    @IBOutlet weak var learnerLayarLabel: UILabel!
+    @IBOutlet weak var learnerKabelLabel: UILabel!
+    @IBOutlet weak var learnerMesinLabel: UILabel!
+    var activityInstance: ActivityModel?
+    
+  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        learnerInstance = LearnerModel (nameLearner: "Wimba", ageLearner: 20, genderLearner: "Male", imageProfileLearner: "")
+//        learnerInstance = LearnerModel (nameLearner: "Wimba", ageLearner: 20, genderLearner: "Male", imageProfileLearner: "")
+//        updateUI()
+        
+        activityInstance = ActivityModel (brandLearner: "LG" , kabelLearner: 50, layarLearner : 22, mesinLearner:"XCZ")
         updateUI()
     }
     func updateUI() {
-        if let instance = learnerInstance {
-            learnerNameLabel.text = instance.name
-            learnerAgeLabel.text = "\(instance.age)"
-            learnerGenderLabel.text = instance.gender
+//        if let instance = learnerInstance {
+//            learnerNameLabel.text = instance.name
+//            learnerAgeLabel.text = "\(instance.age)"
+//            learnerGenderLabel.text = instance.gender
+//        }
+        if let instance = activityInstance {
+            learnerBrandLabel.text = instance.brand
+            learnerLayarLabel.text = "\(instance.layar)"
+            learnerKabelLabel.text = "\(instance.kabel)"
+            learnerMesinLabel.text = instance.mesin
         }
-
     }
    
     @IBAction func increaseAgeButtonClicked(_ sender: UIButton) {
-        if let instance = learnerInstance {
-            instance.increaseAge()
-            updateUI()
-        }
+//        if let instance = learnerInstance {
+//            instance.increaseAge()
+//            updateUI()
+//        }
       
     }
 
     @IBAction func decreaseAgeButtonClicked(_ sender: UIButton) {
-        if let instance = learnerInstance {
-            instance.decreaseAge()
-            updateUI()
-        }
+//        if let instance = learnerInstance {
+//            instance.decreaseAge()
+//            updateUI()
+//        }
     }
     
 }

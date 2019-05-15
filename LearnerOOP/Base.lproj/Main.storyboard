@@ -46,8 +46,36 @@
                                     <action selector="increaseAgeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2p-o8-2V0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEv-Sn-bG0">
+                                <rect key="frame" x="61" y="461" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia7-z9-Kfb">
+                                <rect key="frame" x="61" y="490" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dir-fZ-lMX">
+                                <rect key="frame" x="61" y="519" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llt-Ni-D6X">
+                                <rect key="frame" x="61" y="548" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2s-m4-fPu">
-                                <rect key="frame" x="327" y="263" width="30" height="34"/>
+                                <rect key="frame" x="316" y="269" width="30" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="1" green="0.1233536858" blue="0.030699663509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -62,7 +90,11 @@
                     </view>
                     <connections>
                         <outlet property="learnerAgeLabel" destination="56l-4f-B5L" id="d1f-gC-ve8"/>
+                        <outlet property="learnerBrandLabel" destination="JEv-Sn-bG0" id="dCX-Kt-rYA"/>
                         <outlet property="learnerGenderLabel" destination="ZdT-lm-xP5" id="Icx-qC-D3s"/>
+                        <outlet property="learnerKabelLabel" destination="Dir-fZ-lMX" id="SQ6-op-IfW"/>
+                        <outlet property="learnerLayarLabel" destination="ia7-z9-Kfb" id="oBH-2H-6Xx"/>
+                        <outlet property="learnerMesinLabel" destination="llt-Ni-D6X" id="aQu-0J-euK"/>
                         <outlet property="learnerNameLabel" destination="vNg-eH-4IS" id="IGU-Im-oel"/>
                     </connections>
                 </viewController>
